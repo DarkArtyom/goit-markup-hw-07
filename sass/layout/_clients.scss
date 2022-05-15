@@ -22,24 +22,20 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-
   transition-property: border, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients-item:last-child {
-  margin-right: 0px;
-}
-
-.clients-item:hover {
-  border: 1px solid #2196f3;
+  &:last-child {
+    margin-right: 0px;
+  }
+  &:hover {
+    border: 1px solid #2196f3;
+  }
 }
 
 .clients-icon {
   fill: #afb1b8;
-}
-
-.clients-item:hover .clients-icon {
-  fill: #2196f3;
+  .clients-item:hover & {
+    fill: #2196f3;
+  }
 }

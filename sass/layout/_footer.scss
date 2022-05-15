@@ -25,10 +25,9 @@
 
 .adress-item {
   margin-bottom: 9px;
-}
-
-.adress-item:last-child {
-  margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .logo-studio-footer {
@@ -43,15 +42,13 @@
   line-height: 1.7;
   color: var(--footer-text);
   font-style: normal;
-
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-map-link:hover,
-.footer-map-link:focus {
-  color: var(--link-color);
+  &:hover,
+  &:focus {
+    color: var(--link-color);
+  }
 }
 
 .footer-mail {
@@ -59,15 +56,13 @@
   letter-spacing: 0.02em;
   color: var(--footer-text-color);
   font-style: normal;
-
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-mail:hover,
-.footer-mail:focus {
-  color: var(--link-color);
+  &:hover,
+  &:focus {
+    color: var(--link-color);
+  }
 }
 
 .footer-tel {
@@ -78,12 +73,12 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--link-color);
+  }
 }
 
-.footer-tel:hover,
-.footer-tel:focus {
-  color: var(--link-color);
-}
 /* -------footer join-us ---------*/
 
 .join-us-title {
@@ -105,10 +100,9 @@
   margin-right: 10px;
   width: 44px;
   height: 44px;
-}
-
-.join-us-item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .join-us-link {
@@ -123,18 +117,16 @@
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: var(--bg-icon-color);
+  }
 }
 
 .join-us-icon {
   fill: #ffffff;
-}
-
-.join-us-link:hover {
-  background-color: var(--bg-icon-color);
-}
-
-.join-us-link:hover .join-us-icon {
-  fill: #ffffff;
+  .join-us-link:hover & {
+    fill: #ffffff;
+  }
 }
 
 /*---------- footer-subscribe ---------*/
@@ -165,10 +157,8 @@
   padding-left: 16px;
   margin-top: 20px;
   margin-right: 11px;
-
   font-size: 16px;
   line-height: 1.25;
-
   color: rgba(255, 255, 255, 0.6);
   background: #2f303a;
 
@@ -196,10 +186,9 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-}
-
-.submit-icon {
-  margin-left: 10px;
-  width: 24px;
-  height: 24px;
+  .submit-icon {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+  }
 }

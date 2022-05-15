@@ -4,11 +4,11 @@
 }
 
 .adv-item {
+  max-width: 270px;
   margin-right: var(--list-right-margin);
-}
-
-.adv-item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .adv-icon-box {
@@ -28,10 +28,6 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-text-color);
-}
-
-.adv-item {
-  max-width: 270px;
 }
 
 .adv-text {

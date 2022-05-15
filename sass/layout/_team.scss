@@ -12,10 +12,9 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.team-list-item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .team-cards {
@@ -61,10 +60,9 @@
   margin-right: 10px;
   width: 44px;
   height: 44px;
-}
-
-.team-soc-item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .team-soc-link {
@@ -79,16 +77,14 @@
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: var(--bg-icon-color);
+  }
 }
 
 .team-soc-icon {
   fill: #afb1b8;
-}
-
-.team-soc-link:hover {
-  background-color: var(--bg-icon-color);
-}
-
-.team-soc-link:hover .team-soc-icon {
-  fill: #ffffff;
+  .team-soc-link:hover & {
+    fill: #ffffff;
+  }
 }
